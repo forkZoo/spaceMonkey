@@ -62,39 +62,42 @@ async function loadMonkeyData() {
     try {
         // Show loading state
         document.body.classList.add('loading');
-        
-        // Determine base path - always use /monkey_data/ when served from root
-        const basePath = '/monkey_data/';
-        
+
+        // Determine base path based on environment
+        // - GitHub Pages: use relative path (monkey_data copied to web folder)
+        // - Local server: use root path
+        const isGitHubPages = window.location.hostname.includes('github.io');
+        const basePath = isGitHubPages ? 'monkey_data/' : '/monkey_data/';
+
         // Load DNA
         const dnaResponse = await fetch(basePath + 'dna.json');
         if (!dnaResponse.ok) throw new Error('DNA file not found');
         const dna = await dnaResponse.json();
-        
+
         // Load stats
         const statsResponse = await fetch(basePath + 'stats.json');
         if (!statsResponse.ok) throw new Error('Stats file not found');
         const stats = await statsResponse.json();
-        
+
         // Load history
         const historyResponse = await fetch(basePath + 'history.json');
         if (!historyResponse.ok) throw new Error('History file not found');
         const history = await historyResponse.json();
-        
+
         // Load SVG
         const svgResponse = await fetch(basePath + 'monkey.svg');
         if (!svgResponse.ok) throw new Error('SVG file not found');
         const svgText = await svgResponse.text();
-        
+
         // Update UI
         updateHeader(dna, stats);
         updateMonkeyDisplay(svgText, dna, stats);
         updateTraits(dna.traits);
         updateHistory(history.entries || []);
-        
+
         // Remove loading state
         document.body.classList.remove('loading');
-        
+
     } catch (error) {
         console.error('Error loading monkey data:', error);
         showError('Failed to load monkey data. Make sure you have initialized a monkey first!');
@@ -112,7 +115,7 @@ function updateHeader(dna, stats) {
 function updateMonkeyDisplay(svgText, dna, stats) {
     const container = document.getElementById('monkey-svg');
     container.innerHTML = svgText;
-    
+
     document.getElementById('dna-hash').textContent = dna.dna_hash || 'Unknown';
     document.getElementById('mutations').textContent = dna.mutation_count || '0';
     document.getElementById('parent').textContent = dna.parent_id || 'Genesis';
@@ -122,12 +125,12 @@ function updateMonkeyDisplay(svgText, dna, stats) {
 function updateTraits(traits) {
     const grid = document.getElementById('traits-grid');
     grid.innerHTML = '';
-    
+
     // Sort traits by category
     const sortedTraits = Object.entries(traits).sort((a, b) => {
         return a[0].localeCompare(b[0]);
     });
-    
+
     sortedTraits.forEach(([category, trait]) => {
         const card = createTraitCard(category, trait);
         grid.appendChild(card);
@@ -138,19 +141,19 @@ function updateTraits(traits) {
 function createTraitCard(category, trait) {
     const card = document.createElement('div');
     card.className = `trait-card ${trait.rarity}`;
-    
+
     // Format category name
     const formattedCategory = category
         .split('_')
         .map(word => word.charAt(0).toUpperCase() + word.slice(1))
         .join(' ');
-    
+
     // Format trait value
     const formattedValue = trait.value
         .split('_')
         .map(word => word.charAt(0).toUpperCase() + word.slice(1))
         .join(' ');
-    
+
     card.innerHTML = `
         <div class="trait-info">
             <div class="trait-category">${formattedCategory}</div>
@@ -158,7 +161,7 @@ function createTraitCard(category, trait) {
         </div>
         <div class="trait-rarity">${trait.rarity}</div>
     `;
-    
+
     return card;
 }
 
@@ -166,10 +169,10 @@ function createTraitCard(category, trait) {
 function updateHistory(entries) {
     const timeline = document.getElementById('history-timeline');
     const count = document.getElementById('history-count');
-    
+
     count.textContent = entries.length;
     timeline.innerHTML = '';
-    
+
     if (entries.length === 0) {
         timeline.innerHTML = `
             <div class="nes-container is-rounded">
@@ -178,10 +181,10 @@ function updateHistory(entries) {
         `;
         return;
     }
-    
+
     // Show most recent entries first
     const recentEntries = entries.slice().reverse().slice(0, 10);
-    
+
     recentEntries.forEach(entry => {
         const historyEntry = createHistoryEntry(entry);
         timeline.appendChild(historyEntry);
@@ -192,7 +195,7 @@ function updateHistory(entries) {
 function createHistoryEntry(entry) {
     const div = document.createElement('div');
     div.className = 'history-entry';
-    
+
     // Format date
     const date = new Date(entry.timestamp);
     const formattedDate = date.toLocaleDateString('en-US', {
@@ -202,7 +205,7 @@ function createHistoryEntry(entry) {
         hour: '2-digit',
         minute: '2-digit'
     });
-    
+
     div.innerHTML = `
         <div class="history-date">${formattedDate}</div>
         <div class="history-content">
@@ -216,7 +219,7 @@ function createHistoryEntry(entry) {
             </div>
         </div>
     `;
-    
+
     return div;
 }
 
@@ -227,11 +230,11 @@ function downloadMonkey() {
         alert('No monkey to download!');
         return;
     }
-    
+
     const svgData = new XMLSerializer().serializeToString(svgElement);
     const blob = new Blob([svgData], { type: 'image/svg+xml' });
     const url = URL.createObjectURL(blob);
-    
+
     const link = document.createElement('a');
     link.href = url;
     link.download = `forkmonkey-${Date.now()}.svg`;
@@ -274,7 +277,7 @@ document.addEventListener('keydown', (e) => {
     if (e.key === 'r' || e.key === 'R') {
         loadMonkeyData();
     }
-    
+
     // D key to download
     if (e.key === 'd' || e.key === 'D') {
         downloadMonkey();
@@ -285,7 +288,7 @@ document.addEventListener('keydown', (e) => {
 document.addEventListener('DOMContentLoaded', () => {
     loadMonkeyData();
     startAutoRefresh();
-    
+
     // Add visual feedback for loading
     console.log('%c🐵 ForkMonkey Web Interface Loaded!', 'color: #00ff88; font-size: 20px; font-weight: bold;');
     console.log('%cKeyboard shortcuts:', 'color: #ffd93d; font-weight: bold;');

@@ -80,7 +80,15 @@ Go to Actions tab → Enable workflows
 ### 4. Watch Your Monkey Grow!
 Every day at midnight UTC, your monkey evolves automatically.
 
-### 5. View Your Monkey (Web Interface)
+### 5. View Your Monkey (Live)
+
+Your monkey is automatically deployed to GitHub Pages after each evolution!
+
+🌐 **Live Demo**: `https://<username>.github.io/<repo-name>/`
+
+> **Note**: To enable GitHub Pages, go to **Settings → Pages** and select **GitHub Actions** as the source.
+
+### 6. View Your Monkey (Local)
 ```bash
 # Start the beautiful web interface
 ./start_web.sh
@@ -147,6 +155,7 @@ forkMonkey/
 ├── .github/
 │   └── workflows/
 │       ├── daily-evolution.yml    # Daily AI evolution
+│       ├── deploy-pages.yml       # Deploy to GitHub Pages
 │       └── on-fork.yml            # Initialize child monkey
 ├── src/
 │   ├── genetics.py                # DNA and trait system
