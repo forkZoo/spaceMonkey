@@ -52,11 +52,11 @@
 <rect width="400" height="400" fill="#1A0A00"/>
 <rect x="0" y="340" width="400" height="60" fill="#FF4500" opacity="0.6"/>
 <circle cx="30" cy="375" r="6" fill="#FF6600"/>
-<circle cx="35" cy="375" r="7" fill="#FF6600"/>
-<circle cx="40" cy="375" r="8" fill="#FF6600"/>
-<circle cx="45" cy="375" r="9" fill="#FF6600"/>
-<circle cx="50" cy="375" r="6" fill="#FF6600"/>
-<circle cx="55" cy="375" r="7" fill="#FF6600"/>
+<circle cx="107" cy="375" r="7" fill="#FF6600"/>
+<circle cx="184" cy="375" r="8" fill="#FF6600"/>
+<circle cx="261" cy="375" r="9" fill="#FF6600"/>
+<circle cx="338" cy="375" r="6" fill="#FF6600"/>
+<circle cx="75" cy="375" r="7" fill="#FF6600"/>
 
 <ellipse cx="115" cy="140" rx="45" ry="50" fill="#808080" filter="url(#shadow)"/>
 <ellipse cx="115" cy="140" rx="30" ry="35" fill="#FFB6C1"/>
@@ -88,7 +88,7 @@
 <ellipse cx="200" cy="265" rx="16" ry="22" fill="#8B0000"/>
 <path d="M147 160 Q162 150 177 160" stroke="#5D2E0C" stroke-width="3" fill="none"/>
 <path d="M223 160 Q238 150 253 160" stroke="#5D2E0C" stroke-width="3" fill="none"/>
-<path d="M110 120 Q200 90 290 120" stroke="#E74C3C" stroke-width="12" fill="none"/><polygon points="105,125 90,160 115,150" fill="#E74C3C"/>
+
 <text x="110" y="110" font-size="24" fill="#FFD700">✦</text><text x="290" y="110" font-size="24" fill="#FFD700">✦</text><text x="110" y="290" font-size="24" fill="#FFD700">✦</text><text x="290" y="290" font-size="24" fill="#FFD700">✦</text><text x="200" y="70" font-size="24" fill="#FFD700">✦</text>
 <g transform="translate(325, 15)">
             <rect width="65" height="22" rx="4" fill="#A0A0A0" opacity="0.9"/>
