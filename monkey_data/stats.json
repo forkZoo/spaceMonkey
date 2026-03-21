@@ -1,8 +1,8 @@
 {
-  "dna_hash": "68dff1d4292a00be",
+  "dna_hash": "3ae2e12f0c01d8c1",
   "generation": 1,
   "age_days": 0,
-  "mutation_count": 55,
+  "mutation_count": 56,
   "rarity_score": 40.0,
   "parent_id": null,
   "traits": {
@@ -23,7 +23,7 @@
       "rarity": "legendary"
     },
     "background": {
-      "value": "volcano",
+      "value": "underwater",
       "rarity": "rare"
     },
     "special": {
@@ -31,5 +31,5 @@
       "rarity": "common"
     }
   },
-  "last_updated": "2026-03-20T02:40:07.645671"
+  "last_updated": "2026-03-21T02:33:35.217487"
 }
