@@ -52,11 +52,11 @@
 <rect width="400" height="400" fill="#1A0A00"/>
 <rect x="0" y="340" width="400" height="60" fill="#FF4500" opacity="0.6"/>
 <circle cx="30" cy="375" r="6" fill="#FF6600"/>
-<circle cx="200" cy="375" r="7" fill="#FF6600"/>
-<circle cx="30" cy="375" r="8" fill="#FF6600"/>
-<circle cx="200" cy="375" r="9" fill="#FF6600"/>
-<circle cx="30" cy="375" r="6" fill="#FF6600"/>
-<circle cx="200" cy="375" r="7" fill="#FF6600"/>
+<circle cx="52" cy="375" r="7" fill="#FF6600"/>
+<circle cx="74" cy="375" r="8" fill="#FF6600"/>
+<circle cx="96" cy="375" r="9" fill="#FF6600"/>
+<circle cx="118" cy="375" r="6" fill="#FF6600"/>
+<circle cx="140" cy="375" r="7" fill="#FF6600"/>
 
 <ellipse cx="115" cy="140" rx="45" ry="50" fill="#808080" filter="url(#shadow)"/>
 <ellipse cx="115" cy="140" rx="30" ry="35" fill="#FFB6C1"/>
@@ -85,7 +85,7 @@
         </g>
 <line x1="182" y1="260" x2="218" y2="260" stroke="#5D2E0C" stroke-width="2"/>
 <path d="M125 170 Q125 100 200 90 Q275 100 275 170" stroke="#333" stroke-width="8" fill="none"/><rect x="115" y="155" width="25" height="40" rx="5" fill="#333"/><rect x="260" y="155" width="25" height="40" rx="5" fill="#333"/>
-<ellipse cx="200" cy="340" rx="100" ry="20" fill="#000" opacity="0.2"/>
+<circle cx="100" cy="100" r="3" fill="#FFD700" opacity="0.6"/><circle cx="226" cy="234" r="3" fill="#FFD700" opacity="0.6"/><circle cx="152" cy="168" r="3" fill="#FFD700" opacity="0.6"/><circle cx="278" cy="102" r="3" fill="#FFD700" opacity="0.6"/><circle cx="204" cy="236" r="3" fill="#FFD700" opacity="0.6"/><circle cx="130" cy="170" r="3" fill="#FFD700" opacity="0.6"/><circle cx="256" cy="104" r="3" fill="#FFD700" opacity="0.6"/><circle cx="182" cy="238" r="3" fill="#FFD700" opacity="0.6"/><circle cx="108" cy="172" r="3" fill="#FFD700" opacity="0.6"/><circle cx="234" cy="106" r="3" fill="#FFD700" opacity="0.6"/><circle cx="160" cy="240" r="3" fill="#FFD700" opacity="0.6"/><circle cx="286" cy="174" r="3" fill="#FFD700" opacity="0.6"/>
 <g transform="translate(325, 15)">
             <rect width="65" height="22" rx="4" fill="#4ECDC4" opacity="0.9"/>
             <text x="32" y="15" font-size="8" fill="#FFF" text-anchor="middle" font-family="sans-serif" font-weight="bold">UNCOMMON</text>
