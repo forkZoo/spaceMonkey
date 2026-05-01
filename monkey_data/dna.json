@@ -1,14 +1,14 @@
 {
   "generation": 1,
   "parent_id": null,
-  "dna_hash": "c7bb5d6640e94792",
-  "mutation_count": 87,
+  "dna_hash": "a9625cfb14045b0e",
+  "mutation_count": 88,
   "birth_timestamp": 959191,
   "traits": {
     "body_color": {
-      "value": "brown",
+      "value": "gray",
       "rarity": "common",
-      "gene_sequence": "d47133ea"
+      "gene_sequence": "7801d458"
     },
     "face_expression": {
       "value": "zen",
