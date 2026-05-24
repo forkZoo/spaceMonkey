@@ -1,8 +1,8 @@
 {
-  "dna_hash": "54632f2277586265",
+  "dna_hash": "195f17695c3dd593",
   "generation": 1,
   "age_days": 0,
-  "mutation_count": 98,
+  "mutation_count": 99,
   "rarity_score": 65.0,
   "parent_id": null,
   "traits": {
@@ -15,7 +15,7 @@
       "rarity": "uncommon"
     },
     "accessory": {
-      "value": "wings",
+      "value": "golden_crown",
       "rarity": "legendary"
     },
     "pattern": {
@@ -31,5 +31,5 @@
       "rarity": "rare"
     }
   },
-  "last_updated": "2026-05-23T03:52:18.699077"
+  "last_updated": "2026-05-24T04:12:04.963266"
 }
