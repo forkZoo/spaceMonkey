@@ -1,8 +1,8 @@
 {
-  "dna_hash": "e2aaa3fe5162f0d4",
+  "dna_hash": "6550a783de4e4fb3",
   "generation": 1,
   "age_days": 0,
-  "mutation_count": 122,
+  "mutation_count": 124,
   "rarity_score": 46.666666666666664,
   "parent_id": null,
   "traits": {
@@ -15,7 +15,7 @@
       "rarity": "common"
     },
     "accessory": {
-      "value": "halo",
+      "value": "laser_eyes",
       "rarity": "rare"
     },
     "pattern": {
@@ -31,5 +31,5 @@
       "rarity": "rare"
     }
   },
-  "last_updated": "2026-07-18T02:55:57.845433"
+  "last_updated": "2026-07-19T03:28:49.479014"
 }
