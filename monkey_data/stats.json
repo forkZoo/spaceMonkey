@@ -1,8 +1,8 @@
 {
-  "dna_hash": "c2b1dd08a819d669",
+  "dna_hash": "9bb230890e6127fe",
   "generation": 1,
   "age_days": 0,
-  "mutation_count": 137,
+  "mutation_count": 138,
   "rarity_score": 63.33333333333333,
   "parent_id": null,
   "traits": {
@@ -19,7 +19,7 @@
       "rarity": "legendary"
     },
     "pattern": {
-      "value": "cosmic_dust",
+      "value": "void",
       "rarity": "legendary"
     },
     "background": {
@@ -31,5 +31,5 @@
       "rarity": "legendary"
     }
   },
-  "last_updated": "2026-08-17T01:41:16.804492"
+  "last_updated": "2026-08-18T01:36:41.578096"
 }
