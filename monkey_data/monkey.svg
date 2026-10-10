@@ -52,11 +52,11 @@
 <rect width="400" height="400" fill="#1A0A00"/>
 <rect x="0" y="340" width="400" height="60" fill="#FF4500" opacity="0.6"/>
 <circle cx="30" cy="375" r="6" fill="#FF6600"/>
-<circle cx="353" cy="375" r="7" fill="#FF6600"/>
-<circle cx="336" cy="375" r="8" fill="#FF6600"/>
-<circle cx="319" cy="375" r="9" fill="#FF6600"/>
-<circle cx="302" cy="375" r="6" fill="#FF6600"/>
-<circle cx="285" cy="375" r="7" fill="#FF6600"/>
+<circle cx="204" cy="375" r="7" fill="#FF6600"/>
+<circle cx="38" cy="375" r="8" fill="#FF6600"/>
+<circle cx="212" cy="375" r="9" fill="#FF6600"/>
+<circle cx="46" cy="375" r="6" fill="#FF6600"/>
+<circle cx="220" cy="375" r="7" fill="#FF6600"/>
 
 <ellipse cx="115" cy="140" rx="45" ry="50" fill="#FFD700" filter="url(#shadow)"/>
 <ellipse cx="115" cy="140" rx="30" ry="35" fill="#FFB6C1"/>
@@ -87,7 +87,7 @@
         </g>
 <path d="M170 260 Q200 285 230 260" stroke="#5D2E0C" stroke-width="4" fill="none"/>
 <path d="M100 200 Q50 120 20 220 Q60 210 100 230" fill="#E6E6FA" opacity="0.8"/><path d="M300 200 Q350 120 380 220 Q340 210 300 230" fill="#E6E6FA" opacity="0.8"/>
-<text x="110" y="110" font-size="24" fill="#FFD700">✦</text><text x="290" y="110" font-size="24" fill="#FFD700">✦</text><text x="110" y="290" font-size="24" fill="#FFD700">✦</text><text x="290" y="290" font-size="24" fill="#FFD700">✦</text><text x="200" y="70" font-size="24" fill="#FFD700">✦</text>
+<circle cx="200" cy="200" r="135" fill="none" stroke="#FFD700" stroke-width="6" opacity="0.25"/>
 <g transform="translate(325, 15)">
             <rect width="65" height="22" rx="4" fill="#4ECDC4" opacity="0.9"/>
             <text x="32" y="15" font-size="8" fill="#FFF" text-anchor="middle" font-family="sans-serif" font-weight="bold">UNCOMMON</text>
