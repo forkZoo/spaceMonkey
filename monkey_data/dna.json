@@ -1,8 +1,8 @@
 {
   "generation": 1,
   "parent_id": null,
-  "dna_hash": "ddec4d1fae806f19",
-  "mutation_count": 193,
+  "dna_hash": "1c1173287dd0fde8",
+  "mutation_count": 195,
   "birth_timestamp": 959191,
   "traits": {
     "body_color": {
@@ -11,9 +11,9 @@
       "gene_sequence": "164c6b39"
     },
     "face_expression": {
-      "value": "happy",
+      "value": "curious",
       "rarity": "common",
-      "gene_sequence": "84ed1537"
+      "gene_sequence": "7d0bf056"
     },
     "accessory": {
       "value": "wings",
@@ -26,9 +26,9 @@
       "gene_sequence": "0021f769"
     },
     "background": {
-      "value": "volcano",
-      "rarity": "rare",
-      "gene_sequence": "a35dd45b"
+      "value": "black_hole",
+      "rarity": "legendary",
+      "gene_sequence": "f3696e1d"
     },
     "special": {
       "value": "none",
@@ -36,5 +36,5 @@
       "gene_sequence": "9f7c3055"
     }
   },
-  "rarity_score": 53.333333333333336
+  "rarity_score": 61.66666666666667
 }
